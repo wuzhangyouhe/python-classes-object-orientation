@@ -75,3 +75,5 @@ class RefrigeratedShippingContainer(ShippingContainer):
             serial=str(serial).zfill(6),
             category="R"
         )
+
+# Tell instead of ask , tell the status instead of ask the status and response

@@ -32,3 +32,4 @@ class ShippingContainer:
             owner_code=owner_code,
             serial=ShippingContainer._generate_serial()
         )
+        

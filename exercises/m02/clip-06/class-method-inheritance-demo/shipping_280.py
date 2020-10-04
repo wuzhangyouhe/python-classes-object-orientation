@@ -35,7 +35,7 @@ class ShippingContainer:
 
 
 class RefrigeratedShippingContainer(ShippingContainer):
-
+    # Class inheritance includes constractor and operator
     MAX_CELSIUS = 4.0
 
     def __init__(self, owner_code, contents, *, celsius, **kwargs):

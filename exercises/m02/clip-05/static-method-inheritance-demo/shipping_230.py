@@ -28,6 +28,8 @@ class ShippingContainer:
     def __init__(self, owner_code, contents):
         self.owner_code = owner_code
         self.contents = contents
+        # staticmethod inheritance need to use Class ShippingContainer 
+        # if need polymorphic dipatch then change ShippingContainer to be self
         self.bic = ShippingContainer._make_bic_code(
             owner_code=owner_code,
             serial=ShippingContainer._generate_serial()

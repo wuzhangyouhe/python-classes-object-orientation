@@ -35,7 +35,7 @@ class ShippingContainer:
 
 
 class RefrigeratedShippingContainer(ShippingContainer):
-
+    # Class inheritance includes constractor and operator
     MAX_CELSIUS = 4.0
 
     def __init__(self, owner_code, contents, celsius):
@@ -43,7 +43,7 @@ class RefrigeratedShippingContainer(ShippingContainer):
         if celsius > RefrigeratedShippingContainer.MAX_CELSIUS:
             raise ValueError("Temperature too hot!")
         self.celsius = celsius
-
+    # close the inheritance of class
     @staticmethod
     def _make_bic_code(owner_code, serial):
         return iso6346.create(

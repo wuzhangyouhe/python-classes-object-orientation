@@ -8,6 +8,7 @@ class RefrigeratedShippingContainer(ShippingContainer):
             raise ValueError("Temperature too hot!")
         self._celsius = celsius
 
+    #encaplate getter and setter for property 
     def get_celsius(self):
         return self._celsius
 
@@ -15,3 +16,9 @@ class RefrigeratedShippingContainer(ShippingContainer):
         if celsius > RefrigeratedShippingContainer.MAX_CELSIUS:
             raise ValueError("Temperature too hot!")
         self._celsius = value
+
+'''
+function getter -> decrator -> create -> property object 
+ <-------------------------<wraps>--------------------
+                        setter method ------> setter 
+'''
